@@ -1,0 +1,10 @@
+cause-effect
+component-whole
+content-container
+entity-destination
+entity-origin
+instrument-agency
+member-collection
+message-topic
+other
+product-producer
