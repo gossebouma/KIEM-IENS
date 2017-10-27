@@ -1,4 +1,8 @@
 
+tsv:
+	zcat train[123].tsv.gz > train.tsv
+	gunzip val.tsv.gz test.tsv.gz
+	
 # create triples from raw data
 triples.txt :
 	bzless mappingbased_objects_en.ttl.bz2 |grep 'dbpedia.org/ontology' \
