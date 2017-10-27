@@ -1,0 +1,14 @@
+# parsing wikipedia 
+# requires that you have installed SpaCy
+
+# default is to use dbpedia vocabulary
+# set to movies to create data specifically for movies task
+
+VOCAB=../dbpedia
+#VOCAB=../movies 
+
+paths:
+	for i in `ls wiki_[0-6][0-9] ` ; do make $$i.paths ; done
+
+%.paths:
+	python ../parse_wikipedia.py $* $(VOCAB).vocab $*.$(VOCAB).paths
