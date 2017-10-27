@@ -1,0 +1,6 @@
+directed_by
+has_genre
+has_tags
+in_language
+starred_actors
+written_by
